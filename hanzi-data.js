@@ -1,0 +1,277 @@
+const hanziData = {
+  "1": [
+    {"char":"一","pinyin":"yī","words":["一个","第一","一天","一定","一起"],"sentence":"我有一个大苹果。"},
+    {"char":"二","pinyin":"èr","words":["二月","二十","第二","二手","二人"],"sentence":"今天是二月一日。"},
+    {"char":"三","pinyin":"sān","words":["三天","三月","三个","三角","三年"],"sentence":"我三天读一本书。"},
+    {"char":"十","pinyin":"shí","words":["十个","十月","十分","十岁","十年"],"sentence":"我今年十岁了。"},
+    {"char":"人","pinyin":"rén","words":["人们","大人","人们","人物","人们"],"sentence":"我们都是好孩子。"},
+    {"char":"大","pinyin":"dà","words":["大人","大小","大地","大家","大风"],"sentence":"我长大了要当医生。"},
+    {"char":"小","pinyin":"xiǎo","words":["小孩","小心","大小","小河","小鸟"],"sentence":"小鸟在天上飞。"},
+    {"char":"上","pinyin":"shàng","words":["上学","上面","上班","上午","上帝"],"sentence":"我上学很高兴。"},
+    {"char":"下","pinyin":"xià","words":["下雨","下面","下班","下午","下班"],"sentence":"天要下雨了。"},
+    {"char":"中","pinyin":"zhōng","words":["中国","中间","中心","中学","中午"],"sentence":"中国是我的祖国。"},
+    {"char":"口","pinyin":"kǒu","words":["口水","口罩","口腔","门口","人口"],"sentence":"我张嘴吃饭。"},
+    {"char":"日","pinyin":"rì","words":["日子","日光","今日","生日","日历"],"sentence":"今天是我的生日。"},
+    {"char":"月","pinyin":"yuè","words":["月亮","月光","一月","月亮","月饼"],"sentence":"月亮挂在天上。"},
+    {"char":"目","pinyin":"mù","words":["目光","目标","目录","眼目","耳鼻"],"sentence":"眼睛是心灵的窗户。"},
+    {"char":"耳","pinyin":"ěr","words":["耳朵","耳机","木耳","顺耳","入耳"],"sentence":"我有一双灵敏的耳朵。"},
+    {"char":"手","pinyin":"shǒu","words":["手机","手指","左手","右手","手表"],"sentence":"我用手写字。"},
+    {"char":"足","pinyin":"zú","words":["足球","手足","足够","知足","满足"],"sentence":"我喜欢踢足球。"},
+    {"char":"目","pinyin":"mù","words":["目光","目标","目录","眼目","耳鼻"],"sentence":"眼睛是心灵的窗户。"},
+    {"char":"田","pinyin":"tián","words":["田地","农田","稻田","油田","田园"],"sentence":"农民在田里干活。"},
+    {"char":"本","pinyin":"běn","words":["本来","本子","课本","作业本","笔记本"],"sentence":"我有一个新本子。"}
+  ],
+  "2": [
+    {"char":"木","pinyin":"mù","words":["木头","树木","木瓜","木床","木门"],"sentence":"树是木本植物。"},
+    {"char":"林","pinyin":"lín","words":["森林","树林","竹林","林子","林立"],"sentence":"森林里有许多树。"},
+    {"char":"森","pinyin":"sēn","words":["森林","森严","阴森","林立","森森"],"sentence":"大森林里很凉爽。"},
+    {"char":"山","pinyin":"shān","words":["山上","高山","山石","山林","山河"],"sentence":"山很高很大。"},
+    {"char":"石","pinyin":"shí","words":["石头","石子","宝石","化石","岩石"],"sentence":"河里有许多石头。"},
+    {"char":"川","pinyin":"chuān","words":["山川","四川","河川","平川","山川"],"sentence":"四川是个好地方。"},
+    {"char":"水","pinyin":"shuǐ","words":["水果","喝水","水中","水田","井水"],"sentence":"我要多喝水。"},
+    {"char":"火","pinyin":"huǒ","words":["火车","大火","火柴","烟火","点火"],"sentence":"火可以煮饭。"},
+    {"char":"土","pinyin":"tǔ","words":["土地","泥土","黄土","土壤","土特产"],"sentence":"农民在土地上种粮。"},
+    {"char":"王","pinyin":"wáng","words":["王子","国王","大王","王后","王府"],"sentence":"国王住在城堡里。"},
+    {"char":"天","pinyin":"tiān","words":["天空","今天","明天","春天","天气"],"sentence":"天空很蓝很美。"},
+    {"char":"地","pinyin":"dì","words":["地方","土地","大地","地点","地球"],"sentence":"我们生活在地球上。"},
+    {"char":"头","pinyin":"tóu","words":["头发","年头","带头","点头","摇头"],"sentence":"我的头发黑黑的。"},
+    {"char":"女","pinyin":"nǚ","words":["女孩","女人","女儿","女士","女生"],"sentence":"女孩喜欢穿花裙子。"},
+    {"char":"男","pinyin":"nán","words":["男孩","男人","男士","男生","男儿"],"sentence":"男孩喜欢玩汽车。"},
+    {"char":"父","pinyin":"fù","words":["父亲","父母","继父","岳父","师父"],"sentence":"我爱我的父亲。"},
+    {"char":"母","pinyin":"mǔ","words":["母亲","父母","字母","母校","母爱"],"sentence":"妈妈是母亲。"},
+    {"char":"子","pinyin":"zǐ","words":["孩子","子女","子孙","种子","太子"],"sentence":"每个孩子都是天使。"},
+    {"char":"好","pinyin":"hǎo","words":["好处","好听","好看","好人","好友"],"sentence":"你是一个好孩子。"},
+    {"char":"我","pinyin":"wǒ","words":["我的","我们","我爱","我学","我在"],"sentence":"我爱我的家人。"}
+  ],
+  "3": [
+    {"char":"你","pinyin":"nǐ","words":["你好","你们","你的","我你","爱你"],"sentence":"你好！很高兴认识你。"},
+    {"char":"他","pinyin":"tā","words":["他的","他们","他人","他乡","他日"],"sentence":"他是我的好朋友。"},
+    {"char":"她","pinyin":"tā","words":["她的","她们","女神","她家","她妈"],"sentence":"她是一个漂亮的女孩。"},
+    {"char":"它","pinyin":"tā","words":["它的","它们","它说","它好","它要"],"sentence":"它是一只可爱的小猫。"},
+    {"char":"们","pinyin":"men","words":["我们","你们","他们","她们","它们"],"sentence":"我们一起玩游戏。"},
+    {"char":"的","pinyin":"de","words":["我的","你的","他的","好的","是的"],"sentence":"这是我的书。"},
+    {"char":"了","pinyin":"le","words":["好了","来了","来了","可以了","知道"],"sentence":"我吃完饭了。"},
+    {"char":"在","pinyin":"zài","words":["在家","现在","正在","存在","在此"],"sentence":"我坐在椅子上。"},
+    {"char":"是","pinyin":"shì","words":["是的","是的","就是","可是","这是"],"sentence":"我是小学生。"},
+    {"char":"有","pinyin":"yǒu","words":["有人","没有","只有","拥有","有用"],"sentence":"我有一个玩具熊。"},
+    {"char":"和","pinyin":"hé","words":["和平","和气","温和","和谐","和好"],"sentence":"我和妈妈去公园。"},
+    {"char":"也","pinyin":"yě","words":["也是","也有","也许","并且","而且"],"sentence":"我也会唱歌。"},
+    {"char":"这","pinyin":"zhè","words":["这个","这里","这么","这样","这边"],"sentence":"这是我的家。"},
+    {"char":"那","pinyin":"nà","words":["那个","那里","那么","那样","那边"],"sentence":"那是我的学校。"},
+    {"char":"就","pinyin":"jiù","words":["就是","就要","就业","就坐","就饭"],"sentence":"我马上就去。"},
+    {"char":"都","pinyin":"dōu","words":["都是","都有","都市","全都","都来"],"sentence":"我们都是好孩子。"},
+    {"char":"而","pinyin":"ér","words":["而且","然而","而已","不但","而今"],"sentence":"我长大了而且更懂事了。"},
+    {"char":"着","pinyin":"zhe","words":["看着","听着","说着","笑着","等着"],"sentence":"我听着音乐。"},
+    {"char":"过","pinyin":"guò","words":["过去","经过","过错","过年","过桥"],"sentence":"我小时候很调皮。"},
+    {"char":"为","pinyin":"wèi","words":["因为","为什么","为了","成为","作为"],"sentence":"我因为努力而进步。"}
+  ],
+  "4": [
+    {"char":"学","pinyin":"xué","words":["学习","学校","学生","学问","学家"],"sentence":"我要好好学习的。"},
+    {"char":"校","pinyin":"xiào","words":["学校","校园","校长","校服","校外"],"sentence":"我们的学校很美丽。"},
+    {"char":"书","pinyin":"shū","words":["书本","书包","书店","书记","书信"],"sentence":"我正在读书。"},
+    {"char":"本","pinyin":"běn","words":["本子","课本","作业本","笔记本","成本"],"sentence":"我有一个新本子。"},
+    {"char":"笔","pinyin":"bǐ","words":["铅笔","毛笔","笔记","笔试","笔顺"],"sentence":"我用铅笔写字。"},
+    {"char":"纸","pinyin":"zhǐ","words":["纸张","纸巾","纸飞机","纸箱","纸币"],"sentence":"纸可以写字画画。"},
+    {"char":"文","pinyin":"wén","words":["文字","文化","文学","文明","文件"],"sentence":"中国有五千年的文明。"},
+    {"char":"字","pinyin":"zì","words":["汉字","名字","文字","数字","字体"],"sentence":"我会写很多汉字。"},
+    {"char":"画","pinyin":"huà","words":["画画","图画","画报","画家","画卷"],"sentence":"我喜欢画画。"},
+    {"char":"看","pinyin":"kàn","words":["看书","看见","好看","看法","看护"],"sentence":"我正在看书。"},
+    {"char":"听","pinyin":"tīng","words":["听力","听见","好听","听取","听众"],"sentence":"我认真听老师讲课。"},
+    {"char":"说","pinyin":"shuō","words":["说话","听说","说明","小说","说法"],"sentence":"我会说普通话。"},
+    {"char":"话","pinyin":"huà","words":["说话","通话","听话","话匣子","电话"],"sentence":"我们通电话吧。"},
+    {"char":"写","pinyin":"xiě","words":["写字","写作","写书","抄写","填写"],"sentence":"我正在写作业。"},
+    {"char":"作","pinyin":"zuò","words":["作业","工作","作为","操作","写作"],"sentence":"我认真完成作业。"},
+    {"char":"业","pinyin":"yè","words":["作业","毕业","专业","企业","行业"],"sentence":"学习是我的主要任务。"},
+    {"char":"读","pinyin":"dú","words":["读书","朗读","阅读","读物","读懂"],"sentence":"我每天读书半小时。"},
+    {"char":"书","pinyin":"shū","words":["书本","书包","书店","书记","书信"],"sentence":"我有很多书。"},
+    {"char":"课","pinyin":"kè","words":["上课","下课","课程","课本","课堂"],"sentence":"我们认真上课。"},
+    {"char":"吃","pinyin":"chī","words":["吃饭","吃力","吃亏","吃香","吃苦"],"sentence":"我每天按时吃饭。"}
+  ],
+  "5": [
+    {"char":"喝","pinyin":"hē","words":["喝水","喝酒","喝茶","喝彩","喝斥"],"sentence":"我口渴了想喝水。"},
+    {"char":"吃","pinyin":"chī","words":["吃饭","吃力","吃亏","吃香","吃苦"],"sentence":"我爱吃水果。"},
+    {"char":"喝","pinyin":"hē","words":["喝水","喝酒","喝茶","喝彩","喝斥"],"sentence":"我口渴了想喝水。"},
+    {"char":"玩","pinyin":"wán","words":["玩具","玩笑","好玩","玩要","游玩"],"sentence":"我喜欢玩滑梯。"},
+    {"char":"具","pinyin":"jù","words":["玩具","工具","家具","文具","雨具"],"sentence":"我有很多玩具。"},
+    {"char":"笑","pinyin":"xiào","words":["笑话","笑声","微笑","嘲笑","笑一笑"],"sentence":"妈妈笑了我也笑了。"},
+    {"char":"哭","pinyin":"kū","words":["哭泣","哭闹","哭声","啼哭","哭诉"],"sentence":"小孩哭了要妈妈。"},
+    {"char":"乐","pinyin":"lè","words":["快乐","乐趣","乐于","娱乐","可乐"],"sentence":"我很快乐因为有朋友。"},
+    {"char":"快","pinyin":"kuài","words":["快乐","快速","快车","快走","快跑"],"sentence":"我快点跑回家。"},
+    {"char":"慢","pinyin":"màn","words":["慢慢","慢走","快慢","缓慢","慢跑"],"sentence":"走路不要太快要慢点。"},
+    {"char":"走","pinyin":"zǒu","words":["走路","走开","走好","走远","走失"],"sentence":"我每天走路上学。"},
+    {"char":"跑","pinyin":"pǎo","words":["跑步","逃跑","奔跑","赛跑","跑道"],"sentence":"我爱跑步锻炼身体。"},
+    {"char":"跳","pinyin":"tiào","words":["跳舞","跳远","跳高","跳动","跳绳"],"sentence":"我喜欢跳舞。"},
+    {"char":"舞","pinyin":"wǔ","words":["跳舞","舞会","舞蹈","舞曲","舞步"],"sentence":"舞蹈是一门艺术。"},
+    {"char":"坐","pinyin":"zuò","words":["坐下","请坐","坐好","端坐","坐车"],"sentence":"我坐在椅子上写字。"},
+    {"char":"立","pinyin":"lì","words":["立正","站立","建立","独立","立刻"],"sentence":"我站着听老师讲话。"},
+    {"char":"站","pinyin":"zhàn","words":["站立","车站","站台","站岗","站点"],"sentence":"我在车站等爸爸。"},
+    {"char":"躺","pinyin":"tǎng","words":["躺下","躺倒","躺椅","平躺","躺下"],"sentence":"我累了想躺下休息。"},
+    {"char":"床","pinyin":"chuáng","words":["床铺","床单","上床","下床","床前"],"sentence":"我每天早上床睡觉。"},
+    {"char":"睡","pinyin":"shuì","words":["睡觉","睡眠","入睡","睡下","沉睡"],"sentence":"我每天按时睡觉。"}
+  ],
+  "6": [
+    {"char":"起","pinyin":"qǐ","words":["起来","起床","起立","起名","起跑"],"sentence":"我每天早上按时起床。"},
+    {"char":"床","pinyin":"chuáng","words":["床铺","床单","上床","下床","木床"],"sentence":"我每天起床后整理床铺。"},
+    {"char":"洗","pinyin":"xǐ","words":["洗手","洗脸","洗澡","洗衣服","洗头"],"sentence":"我每天早晚洗手洗脸。"},
+    {"char":"脸","pinyin":"liǎn","words":["脸上","洗脸","脸盆","变脸","不要脸"],"sentence":"我每天早上洗脸。"},
+    {"char":"手","pinyin":"shǒu","words":["手机","手指","左手","右手","手表"],"sentence":"我用手洗手。"},
+    {"char":"口","pinyin":"kǒu","words":["口水","口罩","口腔","门口","人口"],"sentence":"我每天刷牙漱口。"},
+    {"char":"牙","pinyin":"yá","words":["牙齿","牙医","牙刷","牙膏","奶牙"],"sentence":"我每天刷牙保护牙齿。"},
+    {"char":"刷","pinyin":"shuā","words":["刷牙","刷子","刷洗","刷鞋","刷屏"],"sentence":"我每天早晨刷牙。"},
+    {"char":"脸","pinyin":"liǎn","words":["脸上","洗脸","脸盆","面孔","变脸"],"sentence":"我用毛巾洗脸。"},
+    {"char":"眼","pinyin":"yǎn","words":["眼睛","眼镜","眼光","眼力","眼红"],"sentence":"眼睛是心灵的窗户。"},
+    {"char":"睛","pinyin":"jīng","words":["眼睛","眼珠","定睛","目不转睛"],"sentence":"我有一双明亮的大眼睛。"},
+    {"char":"耳","pinyin":"ěr","words":["耳朵","耳机","木耳","顺耳","入耳"],"sentence":"我有一双灵敏的耳朵。"},
+    {"char":"鼻","pinyin":"bí","words":["鼻子","鼻孔","鼻涕","耳鼻","鼻尖"],"sentence":"我的鼻子很灵敏。"},
+    {"char":"头","pinyin":"tóu","words":["头发","年头","带头","点头","摇头"],"sentence":"我的头圆圆的很可爱。"},
+    {"char":"发","pinyin":"fà","words":["头发","理发","出发","发现","发芽"],"sentence":"我的头发黑黑的。"},
+    {"char":"身","pinyin":"shēn","words":["身体","身高","身边","全身","身后"],"sentence":"我要锻炼好身体。"},
+    {"char":"体","pinyin":"tǐ","words":["身体","体育","体重","体力","体积"],"sentence":"体育课上我们跑步。"},
+    {"char":"心","pinyin":"xīn","words":["心里","开心","小心","爱心","心心"],"sentence":"我有一颗善良的心。"},
+    {"char":"里","pinyin":"lǐ","words":["这里","那里","哪里","公里","里外"],"sentence":"我的家在这里。"},
+    {"char":"家","pinyin":"jiā","words":["家人","回家","家乡","家庭","家具"],"sentence":"我爱我的家。"}
+  ],
+  "7": [
+    {"char":"爸","pinyin":"bà","words":["爸爸","老爸","阿爸","爸","爸"],"sentence":"我爸爸是医生。"},
+    {"char":"妈","pinyin":"mā","words":["妈妈","老妈","阿姨","妈","妈"],"sentence":"我妈妈很爱我。"},
+    {"char":"父","pinyin":"fù","words":["父亲","父母","继父","岳父","师父"],"sentence":"我爱我的父亲。"},
+    {"char":"母","pinyin":"mǔ","words":["母亲","父母","字母","母校","母爱"],"sentence":"妈妈是母亲。"},
+    {"char":"哥","pinyin":"gē","words":["哥哥","大哥","表哥","歌哥","哥们"],"sentence":"我有一个哥哥。"},
+    {"char":"弟","pinyin":"dì","words":["弟弟","兄弟","弟妹","表弟","徒弟"],"sentence":"我有一个可爱的弟弟。"},
+    {"char":"姐","pinyin":"jiě","words":["姐姐","大姐","表姐","姐姐","姐妹"],"sentence":"我有一个疼我的姐姐。"},
+    {"char":"妹","pinyin":"mèi","words":["妹妹","姐妹","弟妹","表妹","妹夫"],"sentence":"我有一个漂亮的妹妹。"},
+    {"char":"爷","pinyin":"yé","words":["爷爷","老爷","大爷","祖师爷"],"sentence":"我爷爷退休了。"},
+    {"char":"奶","pinyin":"nǎi","words":["奶奶","牛奶","奶油","奶酪","奶茶"],"sentence":"我奶奶对我很好。"},
+    {"char":"祖","pinyin":"zǔ","words":["祖国","祖先","祖父","祖母","祖宗"],"sentence":"我爱我的祖国。"},
+    {"char":"国","pinyin":"guó","words":["国家","中国","外国","国王","国际"],"sentence":"中国是我的祖国。"},
+    {"char":"中","pinyin":"zhōng","words":["中国","中间","中心","中学","中午"],"sentence":"中国地大物博。"},
+    {"char":"校","pinyin":"xiào","words":["学校","校园","校长","校服","校外"],"sentence":"我们的学校很美丽。"},
+    {"char":"老","pinyin":"lǎo","words":["老师","老人","古老","老化","老外"],"sentence":"老师教我们知识。"},
+    {"char":"师","pinyin":"shī","words":["老师","师父","大师","律师","厨师"],"sentence":"老师像园丁培育我们。"},
+    {"char":"同","pinyin":"tóng","words":["同学","同时","同样","同意","不同"],"sentence":"我和同学一起学习。"},
+    {"char":"学","pinyin":"xué","words":["学习","学校","学生","学问","学家"],"sentence":"我们要努力学习。"},
+    {"char":"生","pinyin":"shēng","words":["生日","学生","生活","生命","花生"],"sentence":"我是一名小学生。"},
+    {"char":"友","pinyin":"yǒu","words":["朋友","友好","友谊","友情","友爱"],"sentence":"我有很多好朋友。"}
+  ],
+  "8": [
+    {"char":"爱","pinyin":"ài","words":["爱心","可爱","喜爱","热爱","爱玩"],"sentence":"我爱我的家人。"},
+    {"char":"心","pinyin":"xīn","words":["心里","开心","小心","爱心","心心"],"sentence":"我心里很高兴。"},
+    {"char":"情","pinyin":"qíng","words":["心情","感情","友情","爱情","情情"],"sentence":"我每天都有好心情。"},
+    {"char":"感","pinyin":"gǎn","words":["感动","感谢","感觉","感情","感冒"],"sentence":"我感动得哭了。"},
+    {"char":"动","pinyin":"dòng","words":["动作","活动","劳动","动物","动态"],"sentence":"我们每天做运动。"},
+    {"char":"手","pinyin":"shǒu","words":["手机","手指","左手","右手","手表"],"sentence":"我用手写字。"},
+    {"char":"足","pinyin":"zú","words":["足球","手足","足够","知足","满足"],"sentence":"我喜爱踢足球。"},
+    {"char":"球","pinyin":"qiú","words":["足球","篮球","排球","地球","气球"],"sentence":"我最喜欢踢足球。"},
+    {"char":"拍","pinyin":"pāi","words":["拍手","拍照","拍卖","打拍","拍子"],"sentence":"我拍手表示开心。"},
+    {"char":"打","pinyin":"dǎ","words":["打字","打架","打开","打工","打扮"],"sentence":"我每天练习打字。"},
+    {"char":"游","pinyin":"yóu","words":["游戏","游泳","旅游","游玩","游游"],"sentence":"我最喜欢玩游戏。"},
+    {"char":"戏","pinyin":"xì","words":["游戏","戏剧","戏曲","戏耍","马戏"],"sentence":"我们一起做游戏。"},
+    {"char":"跳","pinyin":"tiào","words":["跳舞","跳远","跳高","跳动","跳绳"],"sentence":"我喜欢跳绳。"},
+    {"char":"绳","pinyin":"shéng","words":["跳绳","绳子","绳索","麻绳","缆绳"],"sentence":"我会跳绳。"},
+    {"char":"沙","pinyin":"shā","words":["沙子","沙滩","沙尘","泥沙","风沙"],"sentence":"我在沙滩上玩沙。"},
+    {"char":"滩","pinyin":"tān","words":["沙滩","河滩","海滩","盐滩","滩涂"],"sentence":"沙滩上有很多贝壳。"},
+    {"char":"贝","pinyin":"bèi","words":["贝壳","宝贝","贝类","分贝","贝贝"],"sentence":"贝壳很美丽。"},
+    {"char":"壳","pinyin":"ké","words":["贝壳","外壳","子弹壳","脑壳","壳子"],"sentence":"贝壳可以用来做手工。"},
+    {"char":"鱼","pinyin":"yú","words":["小鱼","鱼儿","鱼鳞","钓鱼","鲸鱼"],"sentence":"我在河边钓鱼。"},
+    {"char":"鸟","pinyin":"niǎo","words":["小鸟","鸟儿","鸟巢","鸟蛋","鸟鸣"],"sentence":"小鸟在天上飞。"}
+  ],
+  "9": [
+    {"char":"虫","pinyin":"chóng","words":["虫子","昆虫","毛虫","寄生虫","害虫"],"sentence":"蝴蝶是昆虫的一种。"},
+    {"char":"蚂","pinyin":"mǎ","words":["蚂蚁","蚂蟥","蚂蚱","蚂蚁","蚂蜂"],"sentence":"蚂蚁是很勤劳的动物。"},
+    {"char":"蚁","pinyin":"yǐ","words":["蚂蚁","蚁巢","蚂蚁","白蚁","蚂蚁"],"sentence":"蚂蚁搬家要下雨。"},
+    {"char":"蝴","pinyin":"hú","words":["蝴蝶","蝴蝶结","蝴蝶","蝴蝶","蝴"],"sentence":"蝴蝶很美丽。"},
+    {"char":"蝶","pinyin":"dié","words":["蝴蝶","蝶泳","彩蝶","蝴蝶","蝶"],"sentence":"花蝴蝶在花丛中飞舞。"},
+    {"char":"蜂","pinyin":"fēng","words":["蜜蜂","蜂蜜","黄蜂","马蜂","蜂巢"],"sentence":"蜜蜂会采花蜜。"},
+    {"char":"蜜","pinyin":"mì","words":["蜜蜂","蜂蜜","甜蜜","蜜枣","蜜桃"],"sentence":"蜂蜜很好吃。"},
+    {"char":"花","pinyin":"huā","words":["花朵","花园","花费","火花","雪花"],"sentence":"花园里有许多花。"},
+    {"char":"草","pinyin":"cǎo","words":["小草","草地","草原","青草","草地上"],"sentence":"小草绿绿的。"},
+    {"char":"树","pinyin":"shù","words":["树叶","树林","树木","种树","树苗"],"sentence":"夏天我们在树下乘凉。"},
+    {"char":"叶","pinyin":"yè","words":["树叶","叶子","绿叶","红叶","叶子"],"sentence":"秋天树叶变黄了。"},
+    {"char":"木","pinyin":"mù","words":["木头","树木","木瓜","木床","木门"],"sentence":"树是木本植物。"},
+    {"char":"林","pinyin":"lín","words":["森林","树林","竹林","林子","林立"],"sentence":"森林里有许多动物。"},
+    {"char":"森","pinyin":"sēn","words":["森林","森严","阴森","林立","森森"],"sentence":"大森林里空气很好。"},
+    {"char":"果","pinyin":"guǒ","words":["水果","苹果","成果","结果","果果"],"sentence":"我爱吃各种水果。"},
+    {"char":"树","pinyin":"shù","words":["树叶","树林","树木","种树","树苗"],"sentence":"苹果树结果了。"},
+    {"char":"果","pinyin":"guǒ","words":["水果","苹果","成果","结果","果果"],"sentence":"秋天是收获果实的季节。"},
+    {"char":"园","pinyin":"yuán","words":["花园","公园","果园","校园","园子"],"sentence":"我家的花园很美丽。"},
+    {"char":"瓜","pinyin":"guā","words":["西瓜","黄瓜","瓜果","瓜子","瓜地"],"sentence":"夏天吃西瓜很凉爽。"},
+    {"char":"豆","pinyin":"dòu","words":["豆子","豆腐","豆芽","红豆","黄豆"],"sentence":"我最喜欢吃豆腐。"}
+  ],
+  "10": [
+    {"char":"米","pinyin":"mǐ","words":["大米","米饭","米粥","玉米","虾米"],"sentence":"农民伯伯种大米。"},
+    {"char":"饭","pinyin":"fàn","words":["米饭","吃饭","饭店","饭前","饭后"],"sentence":"我每天按时吃饭。"},
+    {"char":"面","pinyin":"miàn","words":["面条","面包","面前","上面","下面"],"sentence":"我爱吃面条。"},
+    {"char":"包","pinyin":"bāo","words":["包子","书包","包含","面包","打包"],"sentence":"我每天背着书包上学。"},
+    {"char":"饺","pinyin":"jiǎo","words":["饺子","水饺","蒸饺","煎饺","饺儿"],"sentence":"北方人过年吃饺子。"},
+    {"char":"子","pinyin":"zǐ","words":["孩子","子女","子孙","种子","太子"],"sentence":"每个孩子都是祖国的花朵。"},
+    {"char":"粥","pinyin":"zhōu","words":["粥","稀粥","八宝粥","皮蛋瘦肉粥"],"sentence":"早上喝粥对胃好。"},
+    {"char":"汤","pinyin":"tāng","words":["米饭","喝汤","汤匙","汤碗","高汤"],"sentence":"饭前先喝汤。"},
+    {"char":"菜","pinyin":"cài","words":["蔬菜","白菜","青菜","菜单","菜园"],"sentence":"多吃蔬菜对身体好。"},
+    {"char":"蔬","pinyin":"shū","words":["蔬菜","蔬果","蔬","菜蔬"],"sentence":"蔬菜有丰富的营养。"},
+    {"char":"肉","pinyin":"ròu","words":["猪肉","牛肉","羊肉","鸡肉","鱼肉"],"sentence":"我爱吃肉。"},
+    {"char":"鸡","pinyin":"jī","words":["小鸡","鸡蛋","鸡肉","母鸡","公鸡"],"sentence":"母鸡下蛋给小鸡吃。"},
+    {"char":"蛋","pinyin":"dàn","words":["鸡蛋","蛋糕","鸭蛋","鸟蛋","恐龙蛋"],"sentence":"我每天吃一个鸡蛋。"},
+    {"char":"鸭","pinyin":"yā","words":["小鸭","鸭子","鸭蛋","烤鸭","水鸭"],"sentence":"小鸭子在河里游泳。"},
+    {"char":"牛","pinyin":"niú","words":["小牛","牛奶","水牛","黄牛","牛牛"],"sentence":"牛奶很有营养。"},
+    {"char":"羊","pinyin":"yáng","words":["小羊","羊毛","山羊","绵羊","羊羊"],"sentence":"小羊在草地上吃草。"},
+    {"char":"马","pinyin":"mǎ","words":["小马","马上","马匹","赛马","马马"],"sentence":"小马在草原上奔跑。"},
+    {"char":"驴","pinyin":"lǘ","words":["毛驴","驴子","骑驴","驴驴","叫驴"],"sentence":"毛驴可以帮忙干活。"},
+    {"char":"猪","pinyin":"zhū","words":["小猪","猪肉","肥猪","猪猪","小猪"],"sentence":"小猪胖乎乎的很可爱。"},
+    {"char":"狗","pinyin":"gǒu","words":["小狗","狗狗","狗熊","狼狗","牧羊犬"],"sentence":"狗是人类的好朋友。"}
+  ]
+};
+
+for (let i = 11; i <= 100; i++) {
+  const chars = '天地人和大小上下左右前后左右东西南北中前后春夏秋冬年月日时分秒风雨雷电云霜雪雾晨午晚夜光明亮黑暗红黄蓝绿白黑紫橙粉灰棕金银行动跳跃坐立行走跑跳站躺睡觉起床穿衣吃饭喝水说话看听说读写画唱跳游戏学习读书写字做作业考试复习预习复习练习唱歌跳舞画图画弹琴打球跑步游泳踢足球打篮球打排球打羽毛球打乒乓球滑冰滑雪爬山旅行看风景照照片拍视频听音乐讲故事说笑话猜谜语做手工搭积木拼图玩魔方折纸剪纸做实验学科学学数学学语文学生字学拼音学英语学画画学舞蹈学武术学游泳学滑冰学骑车学游泳驾车坐车坐船坐飞机坐火车坐地铁乘飞机乘火车乘地铁乘汽车骑自行车开汽车开火车开飞机乘船渡河过桥建筑设计建房子搭帐篷搭桥修路铺砖种树种花种草浇水施肥松土拔草除虫收获采摘果实蔬菜粮食水果饮料牛奶豆浆果汁白水茶水咖啡可乐雪碧芬达汉堡包比萨饼披萨意大利面三明治寿司拉面刀削面煎饼果子油条豆浆稀饭馒头花卷包子饺子馄饨汤圆月饼粽子春卷爆米花薯片虾条果冻巧克力糖果棉花糖冰激凌冰棍雪糕披萨饼烤鸡翅烤鸡腿烤羊肉串烤红薯烤玉米煮鸡蛋蒸鸡蛋煎鸡蛋炒鸡蛋荷包蛋茶叶蛋皮蛋咸鸭蛋松花皮蛋'];
+  
+  const pinyins = 'tiān dì rén hé dà xiǎo shàng xià zuǒ yòu qián hòu zuǒ yòu dōng xī nán běi zhōng qián hòu chūn xià qiū dōng nián yuè rì shí fēn miǎo fēng yǔ léi diàn yún shuāng xuě wù chén wǔ wǎn yè guāng míng liàng liàng hēi àn hóng huáng lán lǜ bái hēi zǐ chéng fěn huī zōng jīn yín háng dòng tiào yuè zuò lì zǒu xíng pǎo tiào zhàn tǎng shuì jiào qǐ chuán yī chī fàn hē shuǐ shuō huà kàn tīng shuō dú xiě huà chàng tiào yóu xì xué xí dú shū xiě zì zuò zuò yè kǎo shì fù xí yù xí fù xí liàn xí chàng gē tiào wǔ huà tú huà dǎ qiú pǎo bù yóu yǒng tī zú qiú dǎ lán qiú dǎ pái qiú dǎ yǔ máo qiú dǎ pīng pāng qiú huá bīng huá xuě pá shān lǚ xíng kàn fēng jǐng zhào xiàng piàn pīn tú fǎn yìng xué kē xué xué shù xué xué yǔ wén xué shēng zì xué pīn yīn xué yíng yǔ xué huà huà xué wǔ dǎo xué wǔ shù xué yóu yǒng xué huá bīng xué qí chē xué yóu yǒng jià chē zuò chē zuò chuán zuò fēi jī zuò huǒ chē zuò dì tiě chéng fēi jī chéng huǒ chē chéng dì tiě chéng qì chē qí zì xíng chē kāi qì chē kāi huǒ chē kāi fēi jī chéng chuán dù hé guò qiáo shè jì jiàn fáng zi dā zhàng peng dā qiáo xiū lù pū zhuān zhǒng shù zhòng huā zhǒng cǎo jiāo shuǐ shī féi sōng tǔ bá cǎo chú chóng shōu huò cǎi zhāi guǒ shí shū cài liáng shuǐ guǒ yǐn liào niú nǎi dòu jiāng guǒ zhī bái shuǐ chá shuǐ kā fēi kě lè xuě bì fěn dá hàn bǎo mó bǐ sà bǐ sà yì dà lì miàn sān míng zhì shū miàn lā miàn dāo xuā miàn jiān bǐng guǒ zǐ yóu tiáo dòu jiāo mántou huā juān bāo zi jiǎo zi hún tun tāng yuán yuè bǐng zòng juàn bào mǐ huā shǔ piàn xiā tiáo guǒ dòng qiǎo kè lì táng guǒ mián huā táng bīng jī líng bīng gùn xuě gāo pī sà bǐng kǎo jī chì kǎo jī tuǐ kǎo yáng ròu chuàn kǎo hóng shǔ kǎo yǔ mǐ zhǔ jī dàn zhēng jī dàn jiān jī dàn chǎo jī dàn hé bāo dàn chá yè dàn pí dàn xián yā dàn sōng huā pí dàn';
+  
+  const wordsList = [
+    ['学习','学生','学校','学问','科学家'],
+    ['朋友','友情','友谊','友爱','友好'],
+    ['家人','家庭','家乡','家乡','家里'],
+    ['父母','父亲','母亲','父母','爸妈'],
+    ['工作','做事','作家','作业','作为'],
+    ['时间','时光','时空','时间','时时'],
+    ['今天','今日','今天','今日','当天'],
+    ['明天','明日','未来','明日','明朝'],
+    ['去年','去年','往年','去年','昔年'],
+    ['新年','春节','新年','新春','新年']
+  ];
+  
+  const sentencesList = [
+    '我每天认真学习。',
+    '我和朋友一起玩。',
+    '我爱我的家人。',
+    '爸爸妈妈爱我。',
+    '我要努力工作。',
+    '时间过得真快。',
+    '今天天气很好。',
+    '明天是星期一。',
+    '去年我上一年级。',
+    '新年到了真开心。'
+  ];
+  
+  const pinyinList = pinyins.split(' ');
+  const charList = chars.split('');
+  
+  hanziData[i.toString()] = [];
+  for (let j = 0; j < 20; j++) {
+    const idx = (i - 11) * 20 + j;
+    const char = charList[idx % charList.length] || charList[0];
+    const pinyin = pinyinList[idx % pinyinList.length] || pinyinList[0];
+    const words = wordsList[j % wordsList.length];
+    const sentence = sentencesList[j % sentencesList.length];
+    
+    hanziData[i.toString()].push({
+      char: char,
+      pinyin: pinyin,
+      words: words,
+      sentence: sentence
+    });
+  }
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = hanziData;
+}
