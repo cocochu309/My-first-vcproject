@@ -4,7 +4,7 @@ const hanziData = {
     {"char":"二","pinyin":"èr","words":["二月","二十","第二","二手","二人"],"sentence":"今天是二月一日。"},
     {"char":"三","pinyin":"sān","words":["三天","三月","三个","三角","三年"],"sentence":"我三天读一本书。"},
     {"char":"十","pinyin":"shí","words":["十个","十月","十分","十岁","十年"],"sentence":"我今年十岁了。"},
-    {"char":"人","pinyin":"rén","words":["人们","大人","人们","人物","人们"],"sentence":"我们都是好孩子。"},
+    {"char":"人","pinyin":"rén","words":["人们","大人","人物","人们","人们"],"sentence":"我们都是好孩子。"},
     {"char":"大","pinyin":"dà","words":["大人","大小","大地","大家","大风"],"sentence":"我长大了要当医生。"},
     {"char":"小","pinyin":"xiǎo","words":["小孩","小心","大小","小河","小鸟"],"sentence":"小鸟在天上飞。"},
     {"char":"上","pinyin":"shàng","words":["上学","上面","上班","上午","上帝"],"sentence":"我上学很高兴。"},
@@ -17,12 +17,11 @@ const hanziData = {
     {"char":"耳","pinyin":"ěr","words":["耳朵","耳机","木耳","顺耳","入耳"],"sentence":"我有一双灵敏的耳朵。"},
     {"char":"手","pinyin":"shǒu","words":["手机","手指","左手","右手","手表"],"sentence":"我用手写字。"},
     {"char":"足","pinyin":"zú","words":["足球","手足","足够","知足","满足"],"sentence":"我喜欢踢足球。"},
-    {"char":"目","pinyin":"mù","words":["目光","目标","目录","眼目","耳鼻"],"sentence":"眼睛是心灵的窗户。"},
     {"char":"田","pinyin":"tián","words":["田地","农田","稻田","油田","田园"],"sentence":"农民在田里干活。"},
-    {"char":"本","pinyin":"běn","words":["本来","本子","课本","作业本","笔记本"],"sentence":"我有一个新本子。"}
+    {"char":"本","pinyin":"běn","words":["本来","本子","课本","作业本","笔记本"],"sentence":"我有一个新本子。"},
+    {"char":"木","pinyin":"mù","words":["木头","树木","木瓜","木床","木门"],"sentence":"树是木本植物。"}
   ],
   "2": [
-    {"char":"木","pinyin":"mù","words":["木头","树木","木瓜","木床","木门"],"sentence":"树是木本植物。"},
     {"char":"林","pinyin":"lín","words":["森林","树林","竹林","林子","林立"],"sentence":"森林里有许多树。"},
     {"char":"森","pinyin":"sēn","words":["森林","森严","阴森","林立","森森"],"sentence":"大森林里很凉爽。"},
     {"char":"山","pinyin":"shān","words":["山上","高山","山石","山林","山河"],"sentence":"山很高很大。"},
@@ -41,10 +40,10 @@ const hanziData = {
     {"char":"母","pinyin":"mǔ","words":["母亲","父母","字母","母校","母爱"],"sentence":"妈妈是母亲。"},
     {"char":"子","pinyin":"zǐ","words":["孩子","子女","子孙","种子","太子"],"sentence":"每个孩子都是天使。"},
     {"char":"好","pinyin":"hǎo","words":["好处","好听","好看","好人","好友"],"sentence":"你是一个好孩子。"},
-    {"char":"我","pinyin":"wǒ","words":["我的","我们","我爱","我学","我在"],"sentence":"我爱我的家人。"}
+    {"char":"我","pinyin":"wǒ","words":["我的","我们","我爱","我学","我在"],"sentence":"我爱我的家人。"},
+    {"char":"你","pinyin":"nǐ","words":["你好","你们","你的","我你","爱你"],"sentence":"你好！很高兴认识你。"}
   ],
   "3": [
-    {"char":"你","pinyin":"nǐ","words":["你好","你们","你的","我你","爱你"],"sentence":"你好！很高兴认识你。"},
     {"char":"他","pinyin":"tā","words":["他的","他们","他人","他乡","他日"],"sentence":"他是我的好朋友。"},
     {"char":"她","pinyin":"tā","words":["她的","她们","女神","她家","她妈"],"sentence":"她是一个漂亮的女孩。"},
     {"char":"它","pinyin":"tā","words":["它的","它们","它说","它好","它要"],"sentence":"它是一只可爱的小猫。"},
@@ -63,10 +62,10 @@ const hanziData = {
     {"char":"而","pinyin":"ér","words":["而且","然而","而已","不但","而今"],"sentence":"我长大了而且更懂事了。"},
     {"char":"着","pinyin":"zhe","words":["看着","听着","说着","笑着","等着"],"sentence":"我听着音乐。"},
     {"char":"过","pinyin":"guò","words":["过去","经过","过错","过年","过桥"],"sentence":"我小时候很调皮。"},
-    {"char":"为","pinyin":"wèi","words":["因为","为什么","为了","成为","作为"],"sentence":"我因为努力而进步。"}
+    {"char":"为","pinyin":"wèi","words":["因为","为什么","为了","成为","作为"],"sentence":"我因为努力而进步。"},
+    {"char":"学","pinyin":"xué","words":["学习","学校","学生","学问","学家"],"sentence":"我要好好学习的。"}
   ],
   "4": [
-    {"char":"学","pinyin":"xué","words":["学习","学校","学生","学问","学家"],"sentence":"我要好好学习的。"},
     {"char":"校","pinyin":"xiào","words":["学校","校园","校长","校服","校外"],"sentence":"我们的学校很美丽。"},
     {"char":"书","pinyin":"shū","words":["书本","书包","书店","书记","书信"],"sentence":"我正在读书。"},
     {"char":"本","pinyin":"běn","words":["本子","课本","作业本","笔记本","成本"],"sentence":"我有一个新本子。"},
@@ -83,15 +82,12 @@ const hanziData = {
     {"char":"作","pinyin":"zuò","words":["作业","工作","作为","操作","写作"],"sentence":"我认真完成作业。"},
     {"char":"业","pinyin":"yè","words":["作业","毕业","专业","企业","行业"],"sentence":"学习是我的主要任务。"},
     {"char":"读","pinyin":"dú","words":["读书","朗读","阅读","读物","读懂"],"sentence":"我每天读书半小时。"},
-    {"char":"书","pinyin":"shū","words":["书本","书包","书店","书记","书信"],"sentence":"我有很多书。"},
     {"char":"课","pinyin":"kè","words":["上课","下课","课程","课本","课堂"],"sentence":"我们认真上课。"},
-    {"char":"吃","pinyin":"chī","words":["吃饭","吃力","吃亏","吃香","吃苦"],"sentence":"我每天按时吃饭。"}
+    {"char":"吃","pinyin":"chī","words":["吃饭","吃力","吃亏","吃香","吃苦"],"sentence":"我每天按时吃饭。"},
+    {"char":"喝","pinyin":"hē","words":["喝水","喝酒","喝茶","喝彩","喝斥"],"sentence":"我口渴了想喝水。"},
+    {"char":"玩","pinyin":"wán","words":["玩具","玩笑","好玩","玩要","游玩"],"sentence":"我喜欢玩滑梯。"}
   ],
   "5": [
-    {"char":"喝","pinyin":"hē","words":["喝水","喝酒","喝茶","喝彩","喝斥"],"sentence":"我口渴了想喝水。"},
-    {"char":"吃","pinyin":"chī","words":["吃饭","吃力","吃亏","吃香","吃苦"],"sentence":"我爱吃水果。"},
-    {"char":"喝","pinyin":"hē","words":["喝水","喝酒","喝茶","喝彩","喝斥"],"sentence":"我口渴了想喝水。"},
-    {"char":"玩","pinyin":"wán","words":["玩具","玩笑","好玩","玩要","游玩"],"sentence":"我喜欢玩滑梯。"},
     {"char":"具","pinyin":"jù","words":["玩具","工具","家具","文具","雨具"],"sentence":"我有很多玩具。"},
     {"char":"笑","pinyin":"xiào","words":["笑话","笑声","微笑","嘲笑","笑一笑"],"sentence":"妈妈笑了我也笑了。"},
     {"char":"哭","pinyin":"kū","words":["哭泣","哭闹","哭声","啼哭","哭诉"],"sentence":"小孩哭了要妈妈。"},
@@ -107,18 +103,17 @@ const hanziData = {
     {"char":"站","pinyin":"zhàn","words":["站立","车站","站台","站岗","站点"],"sentence":"我在车站等爸爸。"},
     {"char":"躺","pinyin":"tǎng","words":["躺下","躺倒","躺椅","平躺","躺下"],"sentence":"我累了想躺下休息。"},
     {"char":"床","pinyin":"chuáng","words":["床铺","床单","上床","下床","床前"],"sentence":"我每天早上床睡觉。"},
-    {"char":"睡","pinyin":"shuì","words":["睡觉","睡眠","入睡","睡下","沉睡"],"sentence":"我每天按时睡觉。"}
-  ],
-  "6": [
+    {"char":"睡","pinyin":"shuì","words":["睡觉","睡眠","入睡","睡下","沉睡"],"sentence":"我每天按时睡觉。"},
     {"char":"起","pinyin":"qǐ","words":["起来","起床","起立","起名","起跑"],"sentence":"我每天早上按时起床。"},
     {"char":"床","pinyin":"chuáng","words":["床铺","床单","上床","下床","木床"],"sentence":"我每天起床后整理床铺。"},
     {"char":"洗","pinyin":"xǐ","words":["洗手","洗脸","洗澡","洗衣服","洗头"],"sentence":"我每天早晚洗手洗脸。"},
-    {"char":"脸","pinyin":"liǎn","words":["脸上","洗脸","脸盆","变脸","不要脸"],"sentence":"我每天早上洗脸。"},
+    {"char":"脸","pinyin":"liǎn","words":["脸上","洗脸","脸盆","变脸","不要脸"],"sentence":"我每天早上洗脸。"}
+  ],
+  "6": [
     {"char":"手","pinyin":"shǒu","words":["手机","手指","左手","右手","手表"],"sentence":"我用手洗手。"},
     {"char":"口","pinyin":"kǒu","words":["口水","口罩","口腔","门口","人口"],"sentence":"我每天刷牙漱口。"},
     {"char":"牙","pinyin":"yá","words":["牙齿","牙医","牙刷","牙膏","奶牙"],"sentence":"我每天刷牙保护牙齿。"},
     {"char":"刷","pinyin":"shuā","words":["刷牙","刷子","刷洗","刷鞋","刷屏"],"sentence":"我每天早晨刷牙。"},
-    {"char":"脸","pinyin":"liǎn","words":["脸上","洗脸","脸盆","面孔","变脸"],"sentence":"我用毛巾洗脸。"},
     {"char":"眼","pinyin":"yǎn","words":["眼睛","眼镜","眼光","眼力","眼红"],"sentence":"眼睛是心灵的窗户。"},
     {"char":"睛","pinyin":"jīng","words":["眼睛","眼珠","定睛","目不转睛"],"sentence":"我有一双明亮的大眼睛。"},
     {"char":"耳","pinyin":"ěr","words":["耳朵","耳机","木耳","顺耳","入耳"],"sentence":"我有一双灵敏的耳朵。"},
@@ -129,14 +124,14 @@ const hanziData = {
     {"char":"体","pinyin":"tǐ","words":["身体","体育","体重","体力","体积"],"sentence":"体育课上我们跑步。"},
     {"char":"心","pinyin":"xīn","words":["心里","开心","小心","爱心","心心"],"sentence":"我有一颗善良的心。"},
     {"char":"里","pinyin":"lǐ","words":["这里","那里","哪里","公里","里外"],"sentence":"我的家在这里。"},
-    {"char":"家","pinyin":"jiā","words":["家人","回家","家乡","家庭","家具"],"sentence":"我爱我的家。"}
-  ],
-  "7": [
+    {"char":"家","pinyin":"jiā","words":["家人","回家","家乡","家庭","家具"],"sentence":"我爱我的家。"},
     {"char":"爸","pinyin":"bà","words":["爸爸","老爸","阿爸","爸","爸"],"sentence":"我爸爸是医生。"},
     {"char":"妈","pinyin":"mā","words":["妈妈","老妈","阿姨","妈","妈"],"sentence":"我妈妈很爱我。"},
     {"char":"父","pinyin":"fù","words":["父亲","父母","继父","岳父","师父"],"sentence":"我爱我的父亲。"},
     {"char":"母","pinyin":"mǔ","words":["母亲","父母","字母","母校","母爱"],"sentence":"妈妈是母亲。"},
-    {"char":"哥","pinyin":"gē","words":["哥哥","大哥","表哥","歌哥","哥们"],"sentence":"我有一个哥哥。"},
+    {"char":"哥","pinyin":"gē","words":["哥哥","大哥","表哥","歌哥","哥们"],"sentence":"我有一个哥哥。"}
+  ],
+  "7": [
     {"char":"弟","pinyin":"dì","words":["弟弟","兄弟","弟妹","表弟","徒弟"],"sentence":"我有一个可爱的弟弟。"},
     {"char":"姐","pinyin":"jiě","words":["姐姐","大姐","表姐","姐姐","姐妹"],"sentence":"我有一个疼我的姐姐。"},
     {"char":"妹","pinyin":"mèi","words":["妹妹","姐妹","弟妹","表妹","妹夫"],"sentence":"我有一个漂亮的妹妹。"},
@@ -151,14 +146,14 @@ const hanziData = {
     {"char":"同","pinyin":"tóng","words":["同学","同时","同样","同意","不同"],"sentence":"我和同学一起学习。"},
     {"char":"学","pinyin":"xué","words":["学习","学校","学生","学问","学家"],"sentence":"我们要努力学习。"},
     {"char":"生","pinyin":"shēng","words":["生日","学生","生活","生命","花生"],"sentence":"我是一名小学生。"},
-    {"char":"友","pinyin":"yǒu","words":["朋友","友好","友谊","友情","友爱"],"sentence":"我有很多好朋友。"}
-  ],
-  "8": [
+    {"char":"友","pinyin":"yǒu","words":["朋友","友好","友谊","友情","友爱"],"sentence":"我有很多好朋友。"},
     {"char":"爱","pinyin":"ài","words":["爱心","可爱","喜爱","热爱","爱玩"],"sentence":"我爱我的家人。"},
     {"char":"心","pinyin":"xīn","words":["心里","开心","小心","爱心","心心"],"sentence":"我心里很高兴。"},
     {"char":"情","pinyin":"qíng","words":["心情","感情","友情","爱情","情情"],"sentence":"我每天都有好心情。"},
     {"char":"感","pinyin":"gǎn","words":["感动","感谢","感觉","感情","感冒"],"sentence":"我感动得哭了。"},
-    {"char":"动","pinyin":"dòng","words":["动作","活动","劳动","动物","动态"],"sentence":"我们每天做运动。"},
+    {"char":"动","pinyin":"dòng","words":["动作","活动","劳动","动物","动态"],"sentence":"我们每天做运动。"}
+  ],
+  "8": [
     {"char":"手","pinyin":"shǒu","words":["手机","手指","左手","右手","手表"],"sentence":"我用手写字。"},
     {"char":"足","pinyin":"zú","words":["足球","手足","足够","知足","满足"],"sentence":"我喜爱踢足球。"},
     {"char":"球","pinyin":"qiú","words":["足球","篮球","排球","地球","气球"],"sentence":"我最喜欢踢足球。"},
@@ -173,14 +168,14 @@ const hanziData = {
     {"char":"贝","pinyin":"bèi","words":["贝壳","宝贝","贝类","分贝","贝贝"],"sentence":"贝壳很美丽。"},
     {"char":"壳","pinyin":"ké","words":["贝壳","外壳","子弹壳","脑壳","壳子"],"sentence":"贝壳可以用来做手工。"},
     {"char":"鱼","pinyin":"yú","words":["小鱼","鱼儿","鱼鳞","钓鱼","鲸鱼"],"sentence":"我在河边钓鱼。"},
-    {"char":"鸟","pinyin":"niǎo","words":["小鸟","鸟儿","鸟巢","鸟蛋","鸟鸣"],"sentence":"小鸟在天上飞。"}
-  ],
-  "9": [
+    {"char":"鸟","pinyin":"niǎo","words":["小鸟","鸟儿","鸟巢","鸟蛋","鸟鸣"],"sentence":"小鸟在天上飞。"},
     {"char":"虫","pinyin":"chóng","words":["虫子","昆虫","毛虫","寄生虫","害虫"],"sentence":"蝴蝶是昆虫的一种。"},
     {"char":"蚂","pinyin":"mǎ","words":["蚂蚁","蚂蟥","蚂蚱","蚂蚁","蚂蜂"],"sentence":"蚂蚁是很勤劳的动物。"},
     {"char":"蚁","pinyin":"yǐ","words":["蚂蚁","蚁巢","蚂蚁","白蚁","蚂蚁"],"sentence":"蚂蚁搬家要下雨。"},
     {"char":"蝴","pinyin":"hú","words":["蝴蝶","蝴蝶结","蝴蝶","蝴蝶","蝴"],"sentence":"蝴蝶很美丽。"},
-    {"char":"蝶","pinyin":"dié","words":["蝴蝶","蝶泳","彩蝶","蝴蝶","蝶"],"sentence":"花蝴蝶在花丛中飞舞。"},
+    {"char":"蝶","pinyin":"dié","words":["蝴蝶","蝶泳","彩蝶","蝴蝶","蝶"],"sentence":"花蝴蝶在花丛中飞舞。"}
+  ],
+  "9": [
     {"char":"蜂","pinyin":"fēng","words":["蜜蜂","蜂蜜","黄蜂","马蜂","蜂巢"],"sentence":"蜜蜂会采花蜜。"},
     {"char":"蜜","pinyin":"mì","words":["蜜蜂","蜂蜜","甜蜜","蜜枣","蜜桃"],"sentence":"蜂蜜很好吃。"},
     {"char":"花","pinyin":"huā","words":["花朵","花园","花费","火花","雪花"],"sentence":"花园里有许多花。"},
@@ -195,14 +190,14 @@ const hanziData = {
     {"char":"果","pinyin":"guǒ","words":["水果","苹果","成果","结果","果果"],"sentence":"秋天是收获果实的季节。"},
     {"char":"园","pinyin":"yuán","words":["花园","公园","果园","校园","园子"],"sentence":"我家的花园很美丽。"},
     {"char":"瓜","pinyin":"guā","words":["西瓜","黄瓜","瓜果","瓜子","瓜地"],"sentence":"夏天吃西瓜很凉爽。"},
-    {"char":"豆","pinyin":"dòu","words":["豆子","豆腐","豆芽","红豆","黄豆"],"sentence":"我最喜欢吃豆腐。"}
-  ],
-  "10": [
+    {"char":"豆","pinyin":"dòu","words":["豆子","豆腐","豆芽","红豆","黄豆"],"sentence":"我最喜欢吃豆腐。"},
     {"char":"米","pinyin":"mǐ","words":["大米","米饭","米粥","玉米","虾米"],"sentence":"农民伯伯种大米。"},
     {"char":"饭","pinyin":"fàn","words":["米饭","吃饭","饭店","饭前","饭后"],"sentence":"我每天按时吃饭。"},
     {"char":"面","pinyin":"miàn","words":["面条","面包","面前","上面","下面"],"sentence":"我爱吃面条。"},
     {"char":"包","pinyin":"bāo","words":["包子","书包","包含","面包","打包"],"sentence":"我每天背着书包上学。"},
-    {"char":"饺","pinyin":"jiǎo","words":["饺子","水饺","蒸饺","煎饺","饺儿"],"sentence":"北方人过年吃饺子。"},
+    {"char":"饺","pinyin":"jiǎo","words":["饺子","水饺","蒸饺","煎饺","饺儿"],"sentence":"北方人过年吃饺子。"}
+  ],
+  "10": [
     {"char":"子","pinyin":"zǐ","words":["孩子","子女","子孙","种子","太子"],"sentence":"每个孩子都是祖国的花朵。"},
     {"char":"粥","pinyin":"zhōu","words":["粥","稀粥","八宝粥","皮蛋瘦肉粥"],"sentence":"早上喝粥对胃好。"},
     {"char":"汤","pinyin":"tāng","words":["米饭","喝汤","汤匙","汤碗","高汤"],"sentence":"饭前先喝汤。"},
@@ -217,61 +212,37 @@ const hanziData = {
     {"char":"马","pinyin":"mǎ","words":["小马","马上","马匹","赛马","马马"],"sentence":"小马在草原上奔跑。"},
     {"char":"驴","pinyin":"lǘ","words":["毛驴","驴子","骑驴","驴驴","叫驴"],"sentence":"毛驴可以帮忙干活。"},
     {"char":"猪","pinyin":"zhū","words":["小猪","猪肉","肥猪","猪猪","小猪"],"sentence":"小猪胖乎乎的很可爱。"},
-    {"char":"狗","pinyin":"gǒu","words":["小狗","狗狗","狗熊","狼狗","牧羊犬"],"sentence":"狗是人类的好朋友。"}
+    {"char":"狗","pinyin":"gǒu","words":["小狗","狗狗","狗熊","狼狗","牧羊犬"],"sentence":"狗是人类的好朋友。"},
+    {"char":"猫","pinyin":"māo","words":["小猫","猫咪","猫粮","野猫","波斯猫"],"sentence":"小猫喵喵叫。"},
+    {"char":"兔","pinyin":"tù","words":["小兔","兔子","兔毛","白兔","灰兔"],"sentence":"小兔子蹦蹦跳跳。"},
+    {"char":"红","pinyin":"hóng","words":["红色","红军","口红","红花","红红"],"sentence":"红太阳升起来了。"},
+    {"char":"黄","pinyin":"huáng","words":["黄色","黄金","黄河","黄豆","黄黄"],"sentence":"黄叶子落下来。"},
+    {"char":"蓝","pinyin":"lán","words":["蓝色","蓝天","蓝鸟","蓝蓝","靛蓝"],"sentence":"蓝天白云真美丽。"}
   ]
 };
 
+const allChars = '天地的和大小上下左右前后左右东西南北中前后春夏秋冬年月日时分秒风雨雷电云霜雪雾晨午晚夜光明亮黑暗红黄蓝绿白黑紫橙粉灰棕金银行动跳跃坐立行走跑跳站躺睡觉起床穿衣吃饭喝水说话看听说读写画唱跳游戏学习读书写字做作业考试复习预习复习练习唱歌跳舞画图画弹琴打球跑步游泳踢足球打篮球打排球打羽毛球打乒乓球滑冰滑雪爬山旅行看风景照照片拍视频听音乐讲故事说笑话猜谜语做手工搭积木拼图玩魔方折纸剪纸做实验学科学学数学学语文学生字学拼音学英语学画画学舞蹈学武术学游泳学滑冰学骑车学游泳驾车坐车坐船坐飞机坐火车坐地铁乘飞机乘火车乘地铁乘汽车骑自行车开汽车开火车开飞机乘船渡河过桥建筑设计建房子搭帐篷搭桥修路铺砖种树种花种草浇水施肥松土拔草除虫收获采摘果实蔬菜粮食水果饮料牛奶豆浆果汁白水茶水咖啡可乐雪碧芬达汉堡包比萨饼意大利面三明治寿司拉面刀削面煎饼果子油条豆浆稀饭馒头花卷包子饺子馄饨汤圆月饼粽子春卷爆米花薯片虾条果冻巧克力糖果棉花糖冰激凌冰棍雪糕烤鸡翅烤鸡腿烤羊肉串烤红薯烤玉米煮鸡蛋蒸鸡蛋煎鸡蛋炒鸡蛋荷包蛋茶叶蛋皮蛋咸鸭蛋松花皮蛋喜欢朋友家人父母工作时间今天明天去年新年春天夏天秋天冬天早上中午晚上下雨刮风下雪闪电雷声乌云白云星星月亮太阳天空大地海洋河流山川森林草原沙漠田地果园菜园花园公园学校班级老师同学图书馆体育场医院商店餐厅电影院超市火车站飞机场';
+const allPinyins = 'tiān dì de hé dà xiǎo shàng xià zuǒ yòu qián hòu zuǒ yòu dōng xī nán běi zhōng qián hòu chūn xià qiū dōng nián yuè rì shí fēn miǎo fēng yǔ léi diàn yún shuāng xuě wù chén wǔ wǎn yè guāng míng liàng liàng hēi àn hóng huáng lán lǜ bái hēi zǐ chéng fěn huī zōng jīn yín háng dòng tiào yuè zuò lì zǒu xíng pǎo tiào zhàn tǎng shuì jiào qǐ chuán yī chī fàn hē shuǐ shuō huà kàn tīng shuō dú xiě huà chàng tiào yóu xì xué xí dú shū xiě zì zuò zuò yè kǎo shì fù xí yù xí fù xí liàn xí chàng gē tiào wǔ huà tú huà dàn qín dǎ qiú pǎo bù yóu yǒng tī zú qiú dǎ lán qiú dǎ pái qiú dǎ yǔ máo qiú dǎ pīng pāng qiú huá bīng huá xuě pá shān lǚ xíng kàn fēng jǐng zhào xiàng piàn pāi shì pín tīng yīn yuè jiǎng gù shì shuō xiào huà cāi mí yǔ zuò shǒu gōng dā jī mù pīn tú wán mó fāng zhé zhǐ jiǎn zhǐ zuò shí yàn xué kē xué xué shù xué xué yǔ wén xué shēng zì xué pīn yīn xué yīng yǔ xué huà huà xué wǔ dǎo xué wǔ shù xué yóu yǒng xué huá bīng xué qí chē xué yóu yǒng jià chē zuò chē zuò chuán zuò fēi jī zuò huǒ chē zuò dì tiě chéng fēi jī chéng huǒ chē chéng dì tiě chéng qì chē qí zì xíng chē kāi qì chē kāi huǒ chē kāi fēi jī chéng chuán dù hé guò qiáo jiàn zhù shè jì jiàn fáng zi dā zhàng peng dā qiáo xiū lù pū zhuān zhǒng shù zhòng huā zhǒng cǎo jiāo shuǐ shī féi sōng tǔ bá cǎo chú chóng shōu huò cǎi zhāi guǒ shí shū cài liáng shuǐ guǒ yǐn liào niú nǎi dòu jiāng guǒ zhī bái shuǐ chá shuǐ kā fēi kě lè xuě bì fēn dá hàn bǎo bǐ sà bǐ sà yì dà lì miàn sān míng zhì shū miàn lā miàn dāo xuā miàn jiān bǐng guǒ zǐ yóu tiáo dòu jiāo mántou huā juān bāo zi jiǎo zi hún tun tāng yuán yuè bǐng zòng juàn bào mǐ huā shǔ piàn xiā tiáo guǒ dòng qiǎo kè lì táng guǒ mián huā táng bīng jī líng bīng gùn xuě gāo kǎo jī chì kǎo jī tuǐ kǎo yáng ròu chuàn kǎo hóng shǔ kǎo yǔ mǐ zhǔ jī dàn zhēng jī dàn jiān jī dàn chǎo jī dàn hé bāo dàn chá yè dàn pí dàn xián yā dàn sōng huā pí dàn xǐ huan péng yǒu jiā rén fù mǔ gōng zuò shí jiān jīn tiān míng tiān qù nián xīn nián chūn tiān xià tiān qiū tiān dōng tiān zǎo shang zhōng wǔ wǎn shang xià yǔ guā fēng xià xuě shǎn diàn léi shēng wū yún bái yún xīng xing yuè liang tài yáng tiān kōng dà dì hǎi yáng hé liú shānchuān sēn lín cǎo yuán shā mó tián dì guǒ yuán cài yuán huā yuán gōng yuán xué xiào bān jí lǎo shī tóng xué tú shū guǎn tǐ yù chǎng yī yuàn shāng diàn cān tǐng diàn yǐng yuàn chāo shì huǒ chē zhàn fēi jī chǎng';
+const wordsList = [['学习','学生','学校','学问','科学家'],['朋友','友情','友谊','友爱','友好'],['家人','家庭','家乡','家里','家乡'],['父母','父亲','母亲','爸妈','双亲'],['工作','做事','作家','作业','作为'],['时间','时光','时空','时刻','时时'],['今天','今日','今天','本日','当天'],['明天','明日','明日','第二天','明朝'],['去年','去年','往年','旧年','昔年'],['新年','春节','新春','新年','过年'],['春天','春日','春季','春暖','春风'],['夏天','夏季','夏日','暑期','炎夏'],['秋天','秋季','秋日','金秋','深秋'],['冬天','冬季','冬日','寒冬','隆冬'],['早上','早晨','早上','清早','清晨'],['中午','正午','中午','午时','半响'],['晚上','夜晚','晚上','夜里','今晚'],['下雨','雨天','雨伞','雨衣','大雨'],['刮风','大风','风向','风车','风力'],['下雪','雪天','雪人','雪花','雪球']];
+const sentencesList = ['我每天认真学习。','我和朋友一起玩。','我爱我的家人。','爸爸妈妈爱我。','我要努力工作。','时间过得真快。','今天天气很好。','明天是星期一。','去年我上一年级。','新年到了真开心。','春天到了花开了。','夏天可以游泳。','秋天叶子变黄了。','冬天会很冷。','早上要早起。','中午要睡午觉。','晚上要早睡觉。','下雨要带伞。','刮风了真冷。','下雪了可以堆雪人。'];
+
+const charsArray = allChars.split('');
+const pinyinsArray = allPinyins.split(' ');
+
 for (let i = 11; i <= 100; i++) {
-  const chars = '天地人和大小上下左右前后左右东西南北中前后春夏秋冬年月日时分秒风雨雷电云霜雪雾晨午晚夜光明亮黑暗红黄蓝绿白黑紫橙粉灰棕金银行动跳跃坐立行走跑跳站躺睡觉起床穿衣吃饭喝水说话看听说读写画唱跳游戏学习读书写字做作业考试复习预习复习练习唱歌跳舞画图画弹琴打球跑步游泳踢足球打篮球打排球打羽毛球打乒乓球滑冰滑雪爬山旅行看风景照照片拍视频听音乐讲故事说笑话猜谜语做手工搭积木拼图玩魔方折纸剪纸做实验学科学学数学学语文学生字学拼音学英语学画画学舞蹈学武术学游泳学滑冰学骑车学游泳驾车坐车坐船坐飞机坐火车坐地铁乘飞机乘火车乘地铁乘汽车骑自行车开汽车开火车开飞机乘船渡河过桥建筑设计建房子搭帐篷搭桥修路铺砖种树种花种草浇水施肥松土拔草除虫收获采摘果实蔬菜粮食水果饮料牛奶豆浆果汁白水茶水咖啡可乐雪碧芬达汉堡包比萨饼披萨意大利面三明治寿司拉面刀削面煎饼果子油条豆浆稀饭馒头花卷包子饺子馄饨汤圆月饼粽子春卷爆米花薯片虾条果冻巧克力糖果棉花糖冰激凌冰棍雪糕披萨饼烤鸡翅烤鸡腿烤羊肉串烤红薯烤玉米煮鸡蛋蒸鸡蛋煎鸡蛋炒鸡蛋荷包蛋茶叶蛋皮蛋咸鸭蛋松花皮蛋'];
-  
-  const pinyins = 'tiān dì rén hé dà xiǎo shàng xià zuǒ yòu qián hòu zuǒ yòu dōng xī nán běi zhōng qián hòu chūn xià qiū dōng nián yuè rì shí fēn miǎo fēng yǔ léi diàn yún shuāng xuě wù chén wǔ wǎn yè guāng míng liàng liàng hēi àn hóng huáng lán lǜ bái hēi zǐ chéng fěn huī zōng jīn yín háng dòng tiào yuè zuò lì zǒu xíng pǎo tiào zhàn tǎng shuì jiào qǐ chuán yī chī fàn hē shuǐ shuō huà kàn tīng shuō dú xiě huà chàng tiào yóu xì xué xí dú shū xiě zì zuò zuò yè kǎo shì fù xí yù xí fù xí liàn xí chàng gē tiào wǔ huà tú huà dǎ qiú pǎo bù yóu yǒng tī zú qiú dǎ lán qiú dǎ pái qiú dǎ yǔ máo qiú dǎ pīng pāng qiú huá bīng huá xuě pá shān lǚ xíng kàn fēng jǐng zhào xiàng piàn pīn tú fǎn yìng xué kē xué xué shù xué xué yǔ wén xué shēng zì xué pīn yīn xué yíng yǔ xué huà huà xué wǔ dǎo xué wǔ shù xué yóu yǒng xué huá bīng xué qí chē xué yóu yǒng jià chē zuò chē zuò chuán zuò fēi jī zuò huǒ chē zuò dì tiě chéng fēi jī chéng huǒ chē chéng dì tiě chéng qì chē qí zì xíng chē kāi qì chē kāi huǒ chē kāi fēi jī chéng chuán dù hé guò qiáo shè jì jiàn fáng zi dā zhàng peng dā qiáo xiū lù pū zhuān zhǒng shù zhòng huā zhǒng cǎo jiāo shuǐ shī féi sōng tǔ bá cǎo chú chóng shōu huò cǎi zhāi guǒ shí shū cài liáng shuǐ guǒ yǐn liào niú nǎi dòu jiāng guǒ zhī bái shuǐ chá shuǐ kā fēi kě lè xuě bì fěn dá hàn bǎo mó bǐ sà bǐ sà yì dà lì miàn sān míng zhì shū miàn lā miàn dāo xuā miàn jiān bǐng guǒ zǐ yóu tiáo dòu jiāo mántou huā juān bāo zi jiǎo zi hún tun tāng yuán yuè bǐng zòng juàn bào mǐ huā shǔ piàn xiā tiáo guǒ dòng qiǎo kè lì táng guǒ mián huā táng bīng jī líng bīng gùn xuě gāo pī sà bǐng kǎo jī chì kǎo jī tuǐ kǎo yáng ròu chuàn kǎo hóng shǔ kǎo yǔ mǐ zhǔ jī dàn zhēng jī dàn jiān jī dàn chǎo jī dàn hé bāo dàn chá yè dàn pí dàn xián yā dàn sōng huā pí dàn';
-  
-  const wordsList = [
-    ['学习','学生','学校','学问','科学家'],
-    ['朋友','友情','友谊','友爱','友好'],
-    ['家人','家庭','家乡','家乡','家里'],
-    ['父母','父亲','母亲','父母','爸妈'],
-    ['工作','做事','作家','作业','作为'],
-    ['时间','时光','时空','时间','时时'],
-    ['今天','今日','今天','今日','当天'],
-    ['明天','明日','未来','明日','明朝'],
-    ['去年','去年','往年','去年','昔年'],
-    ['新年','春节','新年','新春','新年']
-  ];
-  
-  const sentencesList = [
-    '我每天认真学习。',
-    '我和朋友一起玩。',
-    '我爱我的家人。',
-    '爸爸妈妈爱我。',
-    '我要努力工作。',
-    '时间过得真快。',
-    '今天天气很好。',
-    '明天是星期一。',
-    '去年我上一年级。',
-    '新年到了真开心。'
-  ];
-  
-  const pinyinList = pinyins.split(' ');
-  const charList = chars.split('');
-  
   hanziData[i.toString()] = [];
   for (let j = 0; j < 20; j++) {
     const idx = (i - 11) * 20 + j;
-    const char = charList[idx % charList.length] || charList[0];
-    const pinyin = pinyinList[idx % pinyinList.length] || pinyinList[0];
-    const words = wordsList[j % wordsList.length];
-    const sentence = sentencesList[j % sentencesList.length];
+    const charIdx = idx % charsArray.length;
+    const pinyinIdx = idx % pinyinsArray.length;
+    const wordIdx = j % wordsList.length;
+    const sentIdx = j % sentencesList.length;
     
     hanziData[i.toString()].push({
-      char: char,
-      pinyin: pinyin,
-      words: words,
-      sentence: sentence
+      char: charsArray[charIdx] || '汉',
+      pinyin: pinyinsArray[pinyinIdx] || 'hàn',
+      words: wordsList[wordIdx],
+      sentence: sentencesList[sentIdx]
     });
   }
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = hanziData;
 }
